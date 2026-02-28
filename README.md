@@ -1,16 +1,20 @@
 # Reddit Delay
 
-A Manifest V3 Chrome extension that forces a configurable countdown before allowing access to Reddit, then keeps it unlocked for a configurable period across all tabs.
+Reddit Delay breaks the habit of opening Reddit on autopilot. It turns a mindless reflex into a conscious choice by adding a countdown timer between you and Reddit. Wait out the timer to unlock Reddit.
+
+**Privacy first**: Instead of asking you to take our word for it, we let Chrome enforce your privacy by requesting the minimal permissions possible. Reddit Delay can only access Reddit — not every website you visit.
+
+**Configurable**: Set your own wait time and unlock duration via the options page.
 
 ## How it works
 
-1. You navigate to any `reddit.com` URL
-2. A full-page overlay appears with a countdown timer (default: 30 seconds)
-3. The timer only runs while the tab is visible and focused — switching tabs or minimizing resets it
-4. Once the countdown completes, Reddit is unlocked for a set duration (default: 15 minutes), shared across all open Reddit tabs
-5. After the unlock window expires, the next visit triggers the countdown again
+![Demo](demo.gif)
 
-## Installation
+1. Navigate to any `reddit.com` URL
+2. A full-page overlay appears with a countdown timer (default: 30 seconds)
+3. Once the countdown completes, Reddit is unlocked for a set duration (default: 15 minutes)
+
+## Dev Installation
 
 1. Clone or download this repository
 2. Open Chrome and go to `chrome://extensions`
