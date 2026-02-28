@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Delay",
+  "version": "1.0",
+  "description": "Forces a 30-second wait before you can browse Reddit.",
+  "permissions": ["storage"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
